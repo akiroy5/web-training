@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 body
 {
@@ -15,6 +14,20 @@ body h1{
 #main-header
 {
   border-bottom: 2px solid #000;
+  position:absolute;
+  width:100%;
+  background:rgba(255,255,255,0.5);
+  top:0px;
+}
+
+#main-header:before{
+  content:'*';
+  display:block;
+  width:10px;
+  height:80px;
+  background: #000;
+  position:absolute;
+
 }
 #top-stories
 {
@@ -29,6 +42,9 @@ article
   border: 1px solid #000;
 padding: 10px;
 margin:0px;
+box-shadow: 2px 2px 2px 2px #000000;
+  transition:box-shadow 500ms,background 1s;
+  transition-delay:500ms;
 }
 article img{
   width: 100%;
@@ -36,9 +52,57 @@ article img{
 }
 .article-image
 {
-  width:100%;
+  width:200px;
   height:200px;
   background-size: cover !important;
   background-position:center;
+  border-radius:50px;
+}
+#site-title
+{
+  font-weight:400;
+}
+a{
+  font-style: italic;
+}
+a:hover
+{
+  font-size:20px;
+}
+p{
+  text-align: center;
+}
+.my-input
+{
+  display:block;
+  width:90%;
+  margin:10px;
+  padding:10px 20px;
+  border-radius:10px 20px 2px 50px;
+  border:1px solid #000;
+}
+.my-input:focus{
+  background:#d5ffc2;
+  color:#0f8034;
+  outline:none;
+  border:1px solid #000;
+}
 
+article:active
+{
+  opacity: .4;
+}
+
+.my_text{
+  height:600px;
+  max-height:200px;
+  overflow:scroll;
+  overflow-x:hidden;
+  border:2px solid #000;
+}
+
+article:hover
+{
+  box-shadow:5px 5px 20px rgba(0,0,0,0.7);
+  backgroud:#000;
 }
